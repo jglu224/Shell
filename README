@@ -1,0 +1,23 @@
+		CS270: Project 4
+	Authors: Josh Luttrell, Devon Schleyer
+
+Files: msh.cpp Makefile.txt README.txt
+
+Description: The program creates a simpler version of the SSH shell which consists
+	     of Built-in commands that include setvar, setprompt, setdir, showprocs,
+	     and done. The program also accepts the following Program-control commands;
+	     run, fly, and tovar. If the user inputs an invalid command
+	     or uses the incorrect amount of parameters, an error message will 
+	     print to standard error. Throughout the program, we use for loops to search
+	     through arrays and vectors. Our code consists of functions declared in the
+	     C library which executes, forks, and waits for other programs to complete.
+	     We also used strtok() in some instances of tokenizing a string as well as 
+	     stringstream. The variable types we used for vectors were strings and integers.
+	     There were a few integer variables used  to evaluate conditional statements and 
+	     used as counts through loops for vectors and string elements.
+
+Limitations: Our program assumes that if you are using two variable substitutions in a single
+	     command then both variables and their values have already been defined.
+
+	Example:	msh > setvar HOME /home/jglu224
+			msh > fly echo "^HOME and ^PATH have already been defined."
